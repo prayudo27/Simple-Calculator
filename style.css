@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -10,17 +12,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #e0e3eb;
+  background: #41e1c7;
+  flex-wrap: wrap;
 }
 
 .container {
   position: relative;
   max-width: 300px;
   width: 100%;
-  border-radius: 12px;
   padding: 10px 20px 20px;
-  background: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  background: #41e1c7;
+  box-shadow: 12px -12px 24px #2a9281, -12px 12px 24px #58ffff;
 }
 
 .display {
@@ -34,26 +37,39 @@ body {
   font-size: 25px;
   color: #000e1a;
   pointer-events: none;
+  margin-top: 10px;
 }
 
 .buttons {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .buttons button {
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid;
-    font-size: 1.25rem;
-    cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid;
+  font-size: 1.25rem;
+  cursor: pointer;
 }
 
 .buttons button:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .operator {
-    color: #2f9fff;
+  color: #2f9fff;
 }
+
+.footer {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 550;
+}
+
+.footer p {
+  font-family: "Salsa", cursive;
+}
+
